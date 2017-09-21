@@ -61,7 +61,7 @@ function zdanenyZisk (val) {
     this.dniMesiac = 0 
     this.dan = 20,
     this.naklady = naklady || 700
-    this.ratioCena =  [[0.8, 60], [0.05, 75], [0.15, 90]]
+    this.ratioCena =  [[0.8, 70], [0.05, 75], [0.15, 90]]
     this.mesiacZisk = 0
     
 
@@ -87,8 +87,9 @@ function zdanenyZisk (val) {
     }
     
     kalkulacka.prototype.percenDni = function (ratio) {
-       
+        var vyuziteDniRok = Math.floor(365 * (ratio/100))
         this.dniMesiac = Math.floor(+this.dniRok/12 * (ratio/100))
+        console.log(`pocet dni vyzuzitych pocas roka ${ vyuziteDniRok}`)
         
         
     }

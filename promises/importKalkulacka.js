@@ -1,12 +1,12 @@
 var projekt = require('./kalkulacka')
 
 var byty = []
-var heidukova = new projekt.kalkulacka(null, 'heidukova')
+var heidukova = new projekt.kalkulacka(800, 'heidukova')
 console.log(heidukova.__proto__)
 console.log(Object.entries(heidukova))
 
 
-var wilsonka = new projekt.kalkulacka(480,'wilsonka')
+var wilsonka = new projekt.kalkulacka(1280,'wilsonka')
 var kozia = new projekt.kalkulacka(350, 'kozia')
 
 byty.push(heidukova, wilsonka, kozia)
@@ -17,11 +17,14 @@ byty.forEach((byt, i) => {
     byt.cistyziskMesiac()
     byt.cistyziskMesiac()
     byt.cistyziskMesiac()
-    byt.percenDni(85)
+    byt.cistyziskMesiac()
+    byt.percenDni(75)
     byt.cistyziskMesiac()
     byt.cistyziskMesiac()
     byt.cistyziskMesiac()
-    byt.percenDni(25)
+    byt.cistyziskMesiac()
+    byt.percenDni(75)
+    byt.cistyziskMesiac()
     byt.cistyziskMesiac()
     byt.cistyziskMesiac()
 
